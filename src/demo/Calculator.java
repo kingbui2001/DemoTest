@@ -12,6 +12,8 @@ public class Calculator {
         return a-b;
     }
     public int div(int a, int b){
-        return a/b;
+        if(a<0) return 0;
+        else if(b<0) System.out.print("unavailable");
+        else return a/b;
     }
 }
